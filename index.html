@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Digital Investo</title> 
+    <link rel="stylesheet" type="text/css" href="css_log_in.css">
+    <script>
+   
+    function validat(){
+    
+if(user.value == "rohit" && pass.value == '1234567890' ){
+   
+    alert('YOU ARE VALID USER');
+    return false;
+window.location.href = "next.html";
+        
+               
+            
+    }
+    }
+
+    </script>
+<body>
+    
+
+    
+    <section id="header">
+    <div class="container text-center">
+    <div class="login-box" >
+        
+    <h1 style="text-align: center">Digital Investo</h1>
+    
+    <h6 style="text-align: center">Log in using your Username and password.</h6>    
+       
+       <form class="form-container" onsubmit="return validat()"> 
+       
+        <div class="textbox">
+        <input type="text" size="47" placeholder="Your Username" name="username"  id="user"    required>
+        
+            
+        </div>
+        
+        <div class="textbox">
+        <input type="password" size="47" placeholder="Password" name="password" id="pass" required>
+        </div>  
+          
+        
+        <div class="checkbox">
+        <input name="Stay logged in" id="Stay logged in" type="checkbox" value="1">
+        <label for="Stay logged in">Stay logged in</label>
+        </div>
+        
+           <button type="submit" onclick="return validat()"  value="Login" class="btn btn-primary">Log In!</button> 
+        
+
+             <br>
+             <br>
+    </form>
+       
+    </div>    
+        </div>
+    
+</section>
+    
+</body>   
+</head>
+</html>
